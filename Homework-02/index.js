@@ -6,7 +6,7 @@ import {
   updateInfo,
   delateTrainer,
   delateAllTrainers,
-} from "./src/index.js";
+} from "./src/trainers.js";
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "0.0.0.0";
@@ -71,3 +71,7 @@ app.get("/trainers/:id", async (req, res) => {
 });
 
 //4.Update trainer:
+
+app.listen(PORT, HOST, () => {
+  console.log("Server is up on port...");
+});

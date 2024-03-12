@@ -2,7 +2,7 @@ import { DataService } from "./data.service.js";
 import { createPath } from "../path.js";
 import { Trainer } from "./trainer.model.js";
 
-const TRAINERS_PATH = createPath(["data", "tainers.json"]);
+const TRAINERS_PATH = createPath(["data", "trainers.json"]);
 
 //Save all trainers:
 const saveTrainers = async (trainers) => {
